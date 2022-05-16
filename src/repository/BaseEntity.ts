@@ -156,38 +156,38 @@ export class BaseEntity {
     /**
      * Creates a new entity instance.
      */
-    static create<T extends BaseEntity>(
-        this: { new (): T } & typeof BaseEntity,
-    ): T
+    // static create<T extends BaseEntity>(
+    //     this: { new (): T } & typeof BaseEntity,
+    // ): T
 
     /**
      * Creates a new entities and copies all entity properties from given objects into their new entities.
      * Note that it copies only properties that present in entity schema.
      */
-    static create<T extends BaseEntity>(
-        this: { new (): T } & typeof BaseEntity,
-        entityLikeArray: DeepPartial<T>[],
-    ): T[]
+    // static create<T extends BaseEntity>(
+    //     this: { new (): T } & typeof BaseEntity,
+    //     entityLikeArray: DeepPartial<T>[],
+    // ): T[]
 
     /**
      * Creates a new entity instance and copies all entity properties from this object into a new entity.
      * Note that it copies only properties that present in entity schema.
      */
-    static create<T extends BaseEntity>(
-        this: { new (): T } & typeof BaseEntity,
-        entityLike: DeepPartial<T>,
-    ): T
+    // static create<T extends BaseEntity>(
+    //     this: { new (): T } & typeof BaseEntity,
+    //     entityLike: DeepPartial<T>,
+    // ): T
 
     /**
      * Creates a new entity instance and copies all entity properties from this object into a new entity.
      * Note that it copies only properties that present in entity schema.
      */
-    static create<T extends BaseEntity>(
-        this: { new (): T } & typeof BaseEntity,
-        entityOrEntities?: any,
-    ) {
-        return this.getRepository<T>().create(entityOrEntities)
-    }
+    // static create<T extends BaseEntity>(
+    //     this: { new (): T } & typeof BaseEntity,
+    //     entityOrEntities?: any,
+    // ) {
+    //     return this.getRepository<T>().create(entityOrEntities)
+    // }
 
     /**
      * Merges multiple entities (or entity-like objects) into a given entity.
