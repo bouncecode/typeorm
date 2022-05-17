@@ -28,12 +28,12 @@ export class AdvancedConsoleLogger implements Logger {
             (Array.isArray(this.options) &&
                 this.options.indexOf("query") !== -1)
         ) {
-            const sql =
-                query +
-                (parameters && parameters.length
-                    ? " -- PARAMETERS: " + this.stringifyParams(parameters)
-                    : "")
-            PlatformTools.logInfo("query:", PlatformTools.highlightSql(sql))
+            // const sql =
+            //     query +
+            //     (parameters && parameters.length
+            //         ? " -- PARAMETERS: " + this.stringifyParams(parameters)
+            //         : "")
+            // PlatformTools.logInfo("query:", PlatformTools.highlightSql(sql))
         }
     }
 
